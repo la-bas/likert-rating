@@ -1,4 +1,4 @@
-#Likert Rating
+#Likert Rating jQuery Plugin
 
 jQuery plugin which creates a likert scale rating bar from a form select element.
 
