@@ -33,3 +33,12 @@ backgroundColor: "#333",
 infoBox: true,
 
 selectCallback: function() {}
+
+Example:
+
+    $('.my-likert-scale').likert( {
+        backgroundColor: "red",
+        selectCallback: function(e) {
+            alert('You chose an option.');
+        }
+    })
