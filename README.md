@@ -24,11 +24,11 @@ Then call the jQuery plugin:
 
 ## Configuration
 
-animationTime: 500
+animationTime: 500,
 
-colors: ["ff0000", "ff9900", "ffff00", "ccff00", "33cc00"],
+colors: ["ff0000", "ff9900", "ffff00", "99ff00", "00ff00"],
 
-backgroundColor: "#333",
+backgroundColor: "#000",
 
 infoBox: true,
 
