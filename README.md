@@ -20,7 +20,7 @@ Make a html form with one or more select element:
 
 Then call the jQuery plugin:
 
-	$('.my-likert-scale').likert()
+	$('.my-likert-scale').likert();
 
 ## Configuration
 
@@ -41,4 +41,4 @@ Example:
         selectCallback: function(e) {
             alert('You chose an option.');
         }
-    })
+    });
