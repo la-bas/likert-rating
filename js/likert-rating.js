@@ -17,8 +17,8 @@
         var settings = $.extend({
             // These are the defaults.
             animationTime: 500,
-            colors: ["bd2c33", "e49420", "ecdb00", "3bad54", "1b7db9"],
-            backgroundColor: "#333",
+            colors: ["ff0000", "ff9900", "ffff00", "99ff00", "00ff00"],
+            backgroundColor: "#000",
             infoBox: true,
             selectCallback: function() {}
         }, options );
@@ -51,6 +51,8 @@
                 var value = optionObject.value;
                 $( '.likert-bar', likertContainer ).append('<li><a href="#">' + text + '</a></li>');
             });
+
+            $('.likert-bar li a', likertContainer ).css('backgroundColor', settings.backgroundColor);
 
             // Handle selection (click)
             $('li a', likertContainer).click(function(e) {
