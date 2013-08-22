@@ -20,6 +20,8 @@
             colors: ["ff0000", "ff9900", "ffff00", "99ff00", "00ff00"],
             backgroundColor: "#000",
             infoBox: true,
+            before: '',
+            after: '',
             selectCallback: function() {}
         }, options );
 
@@ -46,11 +48,17 @@
             $(selectElement).prop("selectedIndex", -1);
         
             // Make an undordered list from the option elements
+            if (settings.before) {
+                $('.likert-bar', likertContainer).append('<li>' + settings.before + '</li>');
+            }
             $('option', selectElement).each(function( index, optionObject ) {
                 var text = optionObject.text;
                 var value = optionObject.value;
                 $( '.likert-bar', likertContainer ).append('<li><a href="#">' + text + '</a></li>');
             });
+            if (settings.after) {
+                $('.likert-bar', likertContainer).append('<li>' + settings.after + '</li>');
+            }
 
             $('.likert-bar li a', likertContainer ).css('backgroundColor', settings.backgroundColor);
 
